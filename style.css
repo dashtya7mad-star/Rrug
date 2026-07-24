@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.lang-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lang-selector button {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+h1 { text-align: center; color: #2c3e50; margin-bottom: 5px; }
+.subtitle { text-align: center; color: #7f8c8d; font-size: 14px; margin-bottom: 25px; }
+
+.input-section { display: flex; flex-direction: column; gap: 15px; }
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.media-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: #3498db !important;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="file"] { display: none; }
+
+#cameraContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+video {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+}
+
+button {
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loading { text-align: center; color: #e67e22; font-weight: bold; }
+
+.result-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #eef9f1;
+    border-right: 5px solid #27ae60;
+    border-radius: 6px;
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.disclaimer { margin-top: 30px; font-size: 12px; color: #95a5a6; text-align: center; }
+.hidden { display: none !important; }
