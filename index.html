@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Drug Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="lang-selector">
+            <button onclick="changeLanguage('ckb')">کوردی</button>
+            <button onclick="changeLanguage('ar')">العربية</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+
+        <h1 id="title">زانیاری دەرمان بە ژیریی دەستکرد</h1>
+        <p class="subtitle" id="subtitle">ناوی دەرمان بنووسە یان ڕاستەوخۆ کامێرا بەکاربهێنە</p>
+
+        <div class="input-section">
+            <input type="text" id="drugName" placeholder="ناوی دەرمان...">
+            
+            <div class="media-buttons">
+                <label for="imageInput" class="btn-secondary" id="uploadLabel">بارکردنی وێنە</label>
+                <input type="file" id="imageInput" accept="image/*">
+                
+                <button type="button" id="cameraBtn" class="btn-secondary" onclick="toggleCamera()">کردنەوەی کامێرا</button>
+            </div>
+
+            <div id="cameraContainer" class="hidden">
+                <video id="webcam" autoplay playsinline></video>
+                <button type="button" id="captureBtn" onclick="capturePhoto()">گرتنی وێنە</button>
+            </div>
+
+            <canvas id="canvas" class="hidden"></canvas>
+            <img id="imagePreview" class="hidden" alt="Preview">
+
+            <button id="searchBtn" onclick="analyzeData()">گەڕان و شیکردنەوە</button>
+        </div>
+
+        <div id="loading" class="hidden">تکایە چاوەڕێ بکە...</div>
+
+        <div id="result" class="result-box hidden">
+            <h2 id="resultTitle">ئەنجامی شیکردنەوە:</h2>
+            <div id="resultContent"></div>
+        </div>
+
+        <div class="disclaimer" id="disclaimer">
+            * ئاگاداری: ئەم زانیارییانە بۆ ڕێنمایی گشتیین. هەمیشە ڕاوێژ بە پزیشک یان دەرمانساز بکە.
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
