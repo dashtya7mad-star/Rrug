@@ -1,3 +1,4 @@
+const API_KEY = process.env.GEMINI_API_KEY || window.GEMINI_API_KEY;
 // لە شوێنی فراخوانی مستقیم لە Gemini، ئەم کۆدە بەکاربهێنە:
 window.analyzeData = async function() {
     const drugName = document.getElementById('drugName').value;
