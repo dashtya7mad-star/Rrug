@@ -107,3 +107,13 @@ button {
 
 .disclaimer { margin-top: 30px; font-size: 12px; color: #95a5a6; text-align: center; }
 .hidden { display: none !important; }
+html, body {
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh;
+}
+
+div, main, .container {
+    max-height: none !important;
+    overflow: visible !important;
+}
